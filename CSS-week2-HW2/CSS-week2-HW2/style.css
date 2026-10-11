@@ -1,4 +1,89 @@
-WD4E-Intro_to_CSS3/
-└── CSS-week2-HW2/
-    ├── index.html
-    └── style.css
+/* Bỏ kiểu dáng cũ cho li */
+/* li {
+  list-style: none;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+/* Liên kết bỏ qua đến nội dung chính */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  background-color: #003366;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  z-index: 100;
+}
+
+/* Nav dùng inline-block và rộng khoảng 80% */
+nav {
+  display: inline-block;
+  width: 80%;
+  background-color: #003366;
+  padding: 10px;
+}
+
+/* Chỉ ảnh bên trong nav rộng 10% */
+nav img {
+  width: 10%;
+  height: auto;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* Lưới hai cột, mỗi cột khoảng 40% */
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-evenly;
+  align-items: start;
+  row-gap: 20px;
+  padding: 20px;
+}
+
+/* Chỉ ảnh trong lớp grid rộng 100% */
+.grid img {
+  width: 100%;
+  height: auto;
+}
+
+/* Phần flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.flex div {
+  width: 250px;
+  text-align: center;
+}
+
+.flex img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
