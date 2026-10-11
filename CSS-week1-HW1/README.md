@@ -1,1 +1,2 @@
-# week1-css-HW1
+<head>
+<link rel="stylesheet" href="style.css">
