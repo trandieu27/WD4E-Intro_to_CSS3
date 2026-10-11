@@ -6,6 +6,7 @@
   <title>Bài tập CSS tuần 2</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <a class="skip-link" href="#main-content">Chuyển đến Nội dung chính</a>
@@ -15,41 +16,44 @@
   </header>
 
   <nav>
-    <a href="index.html">
-      <img src="https://via.placeholder.com/100" alt="Trang chủ">
-    </a>
-    <a href="park.html">Công viên</a>
-    <a href="about.html">Giới thiệu</a>
+    <a href="index.html">Trang chủ</a>
+    <a href="#cong-vien">Công viên</a>
+    <a href="#gioi-thieu">Giới thiệu</a>
   </nav>
 
   <main id="main-content">
-    <section class="grid">
+
+    <section class="grid" id="cong-vien">
       <div>
-        <img src="https://via.placeholder.com/300" alt="Hình minh họa trong lưới">
+        <img src="https://picsum.photos/500/350?random=1" alt="Cảnh thiên nhiên thứ nhất">
         <h2>Mục 1</h2>
-        <p>Nội dung mẫu cho cột thứ nhất.</p>
+        <p>Đây là nội dung mẫu ở phần lưới thứ nhất.</p>
       </div>
+
       <div>
-        <img src="https://via.placeholder.com/300" alt="Hình minh họa thứ hai trong lưới">
+        <img src="https://picsum.photos/500/350?random=2" alt="Cảnh thiên nhiên thứ hai">
         <h2>Mục 2</h2>
-        <p>Nội dung mẫu cho cột thứ hai.</p>
+        <p>Đây là nội dung mẫu ở phần lưới thứ hai.</p>
       </div>
     </section>
 
-    <section class="flex">
+    <section class="flex" id="gioi-thieu">
       <div>
-        <img src="https://via.placeholder.com/200" alt="Hình trong phần flex">
+        <img src="https://picsum.photos/300/200?random=3" alt="Hình minh họa thứ nhất">
         <h3>Thẻ 1</h3>
       </div>
+
       <div>
-        <img src="https://via.placeholder.com/200" alt="Hình thứ hai trong phần flex">
+        <img src="https://picsum.photos/300/200?random=4" alt="Hình minh họa thứ hai">
         <h3>Thẻ 2</h3>
       </div>
+
       <div>
-        <img src="https://via.placeholder.com/200" alt="Hình thứ ba trong phần flex">
+        <img src="https://picsum.photos/300/200?random=5" alt="Hình minh họa thứ ba">
         <h3>Thẻ 3</h3>
       </div>
     </section>
+
   </main>
 
   <footer>
